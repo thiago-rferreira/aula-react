@@ -3,7 +3,8 @@ import React from 'react';
 import pessoas from 'data/pessoas';
 import styles from './objetoPlural.module.css';
 import Header from '../components/header/Header';
-const HomePage = () => {
+
+const Pessoas = () => {
     return (
         <div>
             <Header/>
@@ -12,12 +13,11 @@ const HomePage = () => {
                 <div >
                     {pessoas.map((pessoa) => (
                         <li key={pessoa.id} className={styles.mainDiv}>
-                            <div >
+                            <div>
                                 <p>Nome: {pessoa.nome}</p>
                                 <p>Idade: {pessoa.idade}</p>
                                 <p>Cidade: {pessoa.cidade}</p>
                             </div>
-
                         </li>
                     ))}
                 </div>
@@ -26,4 +26,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Pessoas;

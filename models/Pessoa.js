@@ -5,10 +5,15 @@ class Pessoa {
       this.nome = nome;
       this.idade = idade;
       this.cidade = cidade;
+      this.id = this.generateId();
     }
   
     getInfo() {
       return `Nome: ${this.nome}, Idade: ${this.idade}, Cidade: ${this.cidade}`;
+    }
+
+    generateId(){
+        return Math.floor(Math.random() * 10000);
     }
 }
   

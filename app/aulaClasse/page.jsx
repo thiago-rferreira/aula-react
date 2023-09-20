@@ -1,13 +1,21 @@
-// pages/index.js
+"use client";
 import React from 'react';
 import Header from '../components/header/Header';
 import Pessoa, { ListPessoa } from 'models/Pessoa';
-import pessoas from 'data/pessoas';
+import teste from 'data/pessoas';
+import styles from './aulaClasse.module.css'
 
-const HomePage = () => {
+const AulaClasse = () => {
     const objetoDaClasse = new Pessoa('Exemplo', 25, 'Exemplópolis');
     const listaDePessoas = new ListPessoa();
     listaDePessoas.add(objetoDaClasse);
+
+    // Adicionando pessoas do arquivo teste.js na lista de pessoas.
+    teste.map((pessoa) => {
+        listaDePessoas.add(new Pessoa(pessoa.nome, pessoa.idade, pessoa.cidade));
+    })
+
+    // console.log(listaDePessoas)
 
     return (
         <div>
@@ -15,16 +23,15 @@ const HomePage = () => {
             <h1>Minha Página</h1>
             {
                 listaDePessoas.pessoas.map((pessoa) => (
-                    <div key={pessoa.id}>
+                    <div className={styles.divMain} key={pessoa.id}>
                         <p>Nome: {pessoa.nome}</p>
                         <p>Idade: {pessoa.idade}</p>
                         <p>Cidade: {pessoa.cidade}</p>
                     </div>
                 ))
             }
-            
         </div>
     );
 };
 
-export default HomePage;
+export default AulaClasse;

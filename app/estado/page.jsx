@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Header from '../components/header/Header';
 
 export default function Estado(){
     const [contador, setContador] = useState(0);
@@ -25,10 +26,12 @@ export default function Estado(){
 
     return(
         <div>
+            <Header/>
             <p>Contagem: {contador}</p>
             <button onClick={incrementa}>+</button>
             <button onClick={decrementa}>-</button>
             <button onClick={reset}>Reset</button>
+            
         </div>
     )
 }

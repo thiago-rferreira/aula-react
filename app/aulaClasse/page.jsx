@@ -1,4 +1,5 @@
 "use client";
+
 import React from 'react';
 import Header from '../components/header/Header';
 import Pessoa, { ListPessoa } from 'models/Pessoa';
@@ -6,6 +7,7 @@ import teste from 'data/pessoas';
 import styles from './aulaClasse.module.css'
 
 const AulaClasse = () => {
+    // Criando um objeto da classe Pessoa e adicionando na lista de pessoas.
     const objetoDaClasse = new Pessoa('Exemplo', 25, 'Exemplópolis');
     const listaDePessoas = new ListPessoa();
     listaDePessoas.add(objetoDaClasse);

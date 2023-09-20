@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        <Image src="/logo.png" alt="Logo" width={64} height={64} />
+        <Image src="/logo.png" alt="Logo" width={128} height={64} />
       </div>
       <nav>
         <ul className={styles.navList}>
@@ -39,6 +39,11 @@ const Header = () => {
           <li>
             <Link href="/aulaClasse" passHref>
               <div className={styles.navItem}>Aula Classe</div>
+            </Link>
+          </li>
+          <li>
+            <Link href="/exercicioClasse" passHref>
+              <div className={styles.navItem}>Exercício Classe</div>
             </Link>
           </li>
         </ul>

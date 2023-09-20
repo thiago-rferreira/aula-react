@@ -1,0 +1,26 @@
+.mainDiv {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    /* Cor de fundo teal */
+    color: rgb(255, 255, 255);
+    /* Cor do texto branco */
+    -webkit-box-shadow: 9px 6px 27px -4px rgba(0, 0, 2, 1);
+    -moz-box-shadow: 9px 6px 27px -4px rgba(0, 0, 2, 1);
+    box-shadow: 9px 6px 27px -4px rgba(0, 0, 2, 1);
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+    height: 60px;
+}
+
+.error{
+    background-color: rgb(215, 19, 19);
+}
+
+.success{
+    background-color: rgb(26, 213, 45);
+    color: black !important;
+}

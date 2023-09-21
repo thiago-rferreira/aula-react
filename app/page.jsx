@@ -18,22 +18,11 @@ const App = () => {
   }
 
   return (
-    <div>
+      
+      <div>
       <Header/>
-      <button onClick={() => handleShowPopup('Erro ao processar!', 'error', 4000)}>
-        Exibir mensagem de erro
-      </button>
-      <button onClick={() => handleShowPopup('Operação concluída com sucesso!', 'success', 6000)}>
-        Exibir mensagem de sucesso
-      </button>
-
-      {showPopup && (
-        <PopUp
-          message={popupMessage}
-          type={popupType}
-        />
-      )}
-    </div>
+      <h1>Projetos</h1>
+      </div>
   );
 };
 

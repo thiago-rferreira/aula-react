@@ -31,7 +31,6 @@ function Counter({ valorPadrao, agregacao, limitMin, limitMax }) {
             <button className={`${styles.counterButton} ${styles.removeButton}`} onClick={remove}>Remover</button>
             <button className={`${styles.counterButton} ${styles.resetButton}`} onClick={reset}>Voltar ao padrão</button>
         </div>
-
     )
 }
 

@@ -46,6 +46,11 @@ const Header = () => {
               <div className={styles.navItem}>Exercício Classe</div>
             </Link>
           </li>
+          <li>
+            <Link href="/contador" passHref>
+              <div className={styles.navItem}>Teste</div>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

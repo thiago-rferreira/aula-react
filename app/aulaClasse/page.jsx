@@ -9,8 +9,13 @@ import styles from './aulaClasse.module.css'
 const AulaClasse = () => {
     // Criando um objeto da classe Pessoa e adicionando na lista de pessoas.
     const objetoDaClasse = new Pessoa('Exemplo', 25, 'Exemplópolis');
+
+    // Criando a instancia da lista de pessoas.
     const listaDePessoas = new ListPessoa();
+
     listaDePessoas.add(objetoDaClasse);
+
+    console.log(listaDePessoas);
 
     // Adicionando pessoas do arquivo teste.js na lista de pessoas.
     teste.map((pessoa) => {

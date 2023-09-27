@@ -1,0 +1,25 @@
+.mainDiv{
+    background-color: rgb(30, 128, 0);
+    width: 30%;
+    position: fixed;
+    bottom: 0;
+    /* centralizar na tela com position fixed */
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    height: 60px;
+}
+
+/* Vou precisar de duas classes de css, erro e sucesso */
+
+.erro{
+    background-color: rgb(255, 0, 0) !important;
+}
+
+.sucesso{
+    background-color: green !important;
+}

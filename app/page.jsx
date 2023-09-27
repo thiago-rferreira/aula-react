@@ -8,7 +8,7 @@ const App = () => {
   const [popupMessage, setPopupMessage] = useState('');
   const [popupType, setPopupType] = useState('');
 
-  function handleShowPopup(message,type,time){
+  function handleShowPopup(message, type, time) {
     setPopupMessage(message)
     setPopupType(type)
     setShowPopup(true)
@@ -18,11 +18,10 @@ const App = () => {
   }
 
   return (
-      
-      <div>
-      <Header/>
+    <div>
+      <Header />
       <h1>Projetos</h1>
-      </div>
+    </div>
   );
 };
 

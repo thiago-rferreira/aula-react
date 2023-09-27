@@ -16,20 +16,20 @@ class Pessoa {
         return Math.floor(Math.random() * 10000);
     }
 }
-  
+
 export class ListPessoa {
-    constructor() {
-      this.pessoas = [];
-    }
-  
-    add(pessoa) {
-      this.pessoas.push(pessoa);
-    }
-  
-    get() {
-      return this.pessoas;
-    }
+  constructor() {
+    this.pessoas = [];
+  }
+
+  add(pessoa) {
+    this.pessoas.push(pessoa);
+  }
+
+  get() {
+    return this.pessoas;
+  }
 }
 
 export default Pessoa;
-  
+

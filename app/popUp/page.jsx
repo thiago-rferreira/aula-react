@@ -8,7 +8,7 @@ const App = () => {
   const [popupMessage, setPopupMessage] = useState('');
   const [popupType, setPopupType] = useState('');
 
-  function handleShowPopup(message,type,time){
+  function handleShowPopup(message, type, time) {
     setPopupMessage(message)
     setPopupType(type)
     setShowPopup(true)
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <button onClick={() => handleShowPopup('Erro ao processar!', 'error', 4000)}>
         Exibir mensagem de erro
       </button>

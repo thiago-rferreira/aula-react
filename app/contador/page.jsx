@@ -10,46 +10,23 @@ function page() {
             <h2>Aula de estado</h2>
             <Counter
                 valorPadrao={0}
-                agregacao={100}
-                limitMin={0}
-                limitMax={1000}
+                agregacao={1}
+                limitMin={-10}
+                limitMax={10}
             />
 
             <Counter
                 valorPadrao={0}
-                agregacao={50}
+                agregacao={100}
                 limitMin={0}
-                limitMax={200}
+                limitMax={10000}
             />
+
             <Counter
-                valorPadrao={0}
-                agregacao={50}
+                valorPadrao={100}
+                agregacao={1000}
                 limitMin={0}
-                limitMax={200}
-            />
-            <Counter
-                valorPadrao={0}
-                agregacao={50}
-                limitMin={0}
-                limitMax={200}
-            />
-            <Counter
-                valorPadrao={0}
-                agregacao={50}
-                limitMin={0}
-                limitMax={200}
-            />
-            <Counter
-                valorPadrao={0}
-                agregacao={50}
-                limitMin={0}
-                limitMax={200}
-            />
-            <Counter
-                valorPadrao={0}
-                agregacao={50}
-                limitMin={0}
-                limitMax={200}
+                limitMax={100000}
             />
         </div>
     )

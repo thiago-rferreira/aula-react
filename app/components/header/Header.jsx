@@ -56,6 +56,11 @@ const Header = () => {
               <div className={styles.navItem}>popUp</div>
             </Link>
           </li>
+          <li>
+            <Link href="/rotaTeste" passHref>
+              <div className={styles.navItem}>Rota Teste</div>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

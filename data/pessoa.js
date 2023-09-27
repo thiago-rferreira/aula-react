@@ -1,8 +1,8 @@
 const pessoa = {
-    nome: 'Thiago',
-    idade: 24,
+    id: 8,
+    nome: 'Livia',
+    idade: 16,
     cidade: 'Campinas',
 };
-  
+
 export default pessoa;
-  

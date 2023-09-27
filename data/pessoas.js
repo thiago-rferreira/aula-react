@@ -8,22 +8,28 @@ const pessoas = [
     },
     {
       id: 2,
-      nome: 'Maria',
+      nome: 'Livia',
       idade: 25,
       cidade: 'Rio de Janeiro',
     },
     {
       id: 3,
-      nome: 'Pedro',
+      nome: 'Caique',
       idade: 28,
       cidade: 'Belo Horizonte',
     },
     {
         id: 4,
-        nome: 'Thiago',
-        idade: 24,
-        cidade: 'Campinas',
+        nome: 'Felipe',
+        idade: 31,
+        cidade: 'Belem',
     },
+    {
+      id: 5,
+      nome: 'Godoy',
+      idade: 16,
+      cidade: 'Campinas',
+  },
   ];
   
   export default pessoas;

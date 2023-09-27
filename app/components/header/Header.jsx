@@ -61,6 +61,11 @@ const Header = () => {
               <div className={styles.navItem}>Rota Teste</div>
             </Link>
           </li>
+          <li>
+            <Link href="/aulaAPI" passHref>
+              <div className={styles.navItem}>Aula API</div>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

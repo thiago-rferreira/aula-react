@@ -1,5 +1,4 @@
 'use client'
-import { Stint_Ultra_Condensed } from 'next/font/google';
 import React, { useEffect, useState } from 'react';
 import fetchApiData from '../components/apiCaller/fetchApiData';
 import Header from '../components/header/Header';
@@ -22,7 +21,6 @@ export default function Home() {
         fetchData();
     }, []);
 
-
     return (
         <>
             <Header />
@@ -35,11 +33,7 @@ export default function Home() {
                             <div
                                 key={agente.uuid}
                                 className={styles.card}
-                                style={{
-                                    //backgroundImage: `url(${agente.background})`,
-                                    //backgroundPosition: 'center', // Centraliza a imagem de fundo
-                                    //backgroundSize: 'cover', // Faz a imagem de fundo cobrir toda a div
-                                }}>
+                            >
                                 <li className={styles.agentName} >{agente.displayName}</li>
                                 <img className={styles.img} src={agente.bustPortrait} alt='{agente.displayName}' />
                                 <p>{agente.description}</p>
@@ -47,7 +41,7 @@ export default function Home() {
                                     <h2>Skills</h2>
                                     <ul className={styles.divIcons}>
                                         {agente.abilities.map((habilidade) => (
-                                            <div key={habilidade.uuid} className={styles.skillDiv}>
+                                            <div key={habilidade.displayName} className={styles.skillDiv}>
                                                 <li>{habilidade.displayName.toUpperCase()}</li>
                                                 <img className={styles.imgIcon} src={habilidade.displayIcon} alt={habilidade.displayName} />
                                             </div>

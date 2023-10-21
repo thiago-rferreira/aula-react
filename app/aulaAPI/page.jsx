@@ -39,10 +39,7 @@ export default function Home() {
 
   const removeAgente = (agente) => {
     instanciaLista.removeAgente(agente); // Remova o agente da instância compartilhada
-
-    // Atualize o estado local com a lista de agentes atualizada (sem o agente removido)
-
-    setListaAgentes(instanciaLista.getListaAgentes());
+    setListaAgentes(instanciaLista.getListaAgentes()); // Puxa a lista para o varivel local que exibe no map
   };
 
   useEffect(() => {
